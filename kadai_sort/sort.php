@@ -7,7 +7,6 @@
 <body>
 <p>
     <?php
-    // 自作のソート関数
     function sort_2way(&$array, $order) {
         if ($order == 'asc') {
             sort($array, SORT_NATURAL | SORT_FLAG_CASE);
@@ -25,7 +24,6 @@
         echo "降順にソートします。<br>";
     }
 
-    // 自作のソート関数を呼び出す
     sort_2way($nums, $sort_order);
 
     foreach ($nums as $num) {
